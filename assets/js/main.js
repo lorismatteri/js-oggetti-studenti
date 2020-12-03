@@ -24,6 +24,12 @@ var studenti = {
     nome: 'Romolo',
     cognome: 'Remo',
     eta: 25
+  },
+  //Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+  newStudent: {
+    nome: prompt('Inserisci nome'),
+    cognome: prompt('Inserisci cognome'),
+    eta: prompt('Inserisci età')
   }
 }
 
@@ -32,6 +38,6 @@ for (var key in studenti) {
   var cognomeStudente = studenti[key].cognome;
   console.log(nomeStudente + ' ' + cognomeStudente);
 }
-//Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
 
 
